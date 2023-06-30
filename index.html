@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quoty app</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fontawesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <section>
+        <!--to contain all of our contents I added a div to represent a card-->
+        <div class="card">
+
+            <!--I added a title to let the user know about what they will click for!-->
+            <h2 class='title' id="title">Have a Quoty morning!</h2>
+            
+            <!--we add a container to hold the quote and the author name on it-->
+            <div id="quoteContainer">
+
+                <div id="quote"></div>
+                <div id="author"></div>
+                <!--this button is to go back to main screen-->
+                <button class="ebutton" id="btn3">
+                    <img src="arrow.svg" alt="">
+                </button>
+                
+            </div>
+
+            <!--this button is for the first click-->
+            <button class="button" id="btn1">Get your Quote</button>
+            
+            <!--this button is to get a new quote-->
+            <button class="button" id="btn2">Get your Quote</button>
+            
+        
+            
+        </div>
+        <footer>
+            <em id="copyright">Copyright &copy; 2023 All Rights Reserved | Made with love by <a href="https://twitter.com/devjood">@devJood</a></em>
+        </footer>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
