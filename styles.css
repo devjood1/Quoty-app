@@ -1,68 +1,83 @@
+/*The default values for the whole web app*/
 body{
+    background: #386361;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 0;
     padding: 0;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     height: 100vh;
     overflow: hidden;
-    background: #386361;
 }
+
+/*The card that will contain our quoteContainer*/
 .card {
+
+    /*For the card design*/
     background-color: #CEDFD9;
     width: 400px;
     min-height: 400px;
+    max-width: 1920px;
+    padding: 20px;
+    border-radius: 10px;
+    overflow: auto;
+    text-align: center;
+    
+    /*Getting the card in the center*/
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    max-width: 1920px;
-    padding: 20px;
-    overflow: auto;
-    
+    transform: translate(-50%, -50%);
 }
-  
-  .card h2 {
+
+/*Styling the sentence "Have a quoty morning!"*/
+    .card h2 {
     font-size: 24px;
     margin-bottom: 10px;
     padding: 0;
-  }
+}
   
-  .button {
+/*Here I am styling the button class so I can use it on the first button and the second button*/
+.button {
+
+    /*if you want to change the button text color and it's background here*/
+    color: #cedfd9;
+    background-color: #386361;
+    
+    /*For the button design*/
     padding: 10px 20px;
     width: 300px;
     border: none;
-    color: #cedfd9;
-    background-color: #386361;
-    border-radius: 10px;
-    box-shadow: inset 0 0 0 0 #EBFCFB;
-    transition: all 0.6s ease-in-out;
     font-size: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 10px;
-    background-repeat: no-repeat;
+    border-radius: 10px;
+    
+    /*I add the box-shadow to make the button hover animation*/
+    box-shadow: inset 0 0 0 0 #EBFCFB;
+    transition: all 0.6s ease-in-out;
 }
 
+/*Button hover animation*/
 .button:hover{
     box-shadow: inset 300px 0 0 0 #EBFCFB;
     cursor: pointer;
     color: black;
 }
 
-
+/*the first button styling I only added the display block to help me when coding with JavaScript*/
 #btn1{
     display: block;
 }
 
+/*Button 2 needed a margin so I can distance it from the quote*/
 #btn2{
     margin: 20px;
 }
 
-
+/*Here to style the quote*/
 #quote {
     text-align: center;
     font-size: 19px;
@@ -70,13 +85,16 @@ body{
     margin: 5px;
 }
 
+/*Here to style the author*/
 #author {
     margin: 10px;
     font-size: 17px;
     color: #CEDFD9;
 }
 
+/*Here is the button 3 styling and because it's different from the previous buttons It doesn't have the same styling*/
 #btn3 {
+    /*style of the third button*/
     display: flex;
     flex-direction: column;
     align-self: flex-end;
@@ -86,20 +104,23 @@ body{
     padding: 8px 20px;
     border-radius: 10px;
     background-color: #CEDFD9;
-    background-image: url(arrow.svg);
-    background-repeat: no-repeat;
-    background-position: center;
     font-size: 16px;
     height: 4vh;
     width: 1vh;
     border: none;
+    /*The style of the arrow svg that is on the third button*/
+    background-image: url(arrow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
+/*Third button animation*/
 #btn3:hover{
     background-color: #a6c9c6;
     transition: all.35s ease-in-out;
 }
 
+/*This is the quote container that will hold the quote and author and the third button*/
 #quoteContainer {
     display: flex;
     flex-direction: column;
@@ -109,13 +130,16 @@ body{
     border: none;
     border-radius: 20px;
     background-color: #386361;
-    position: relative; /* create a containing block for btn3 */
-    overflow: hidden; /* Clip the button to the container */
+    /* containing block for btn3 */
+    position: relative; 
+    /* this is to Clip the third button to the container */
+    overflow: hidden; 
     max-height: 1920px;
 }
 
+/*The style for the copyright text*/
 footer {
-    position: absolute; /* added absolute position */
+    position: absolute;
     bottom: 10px;
     width: 100%;
     height: 1.5rem;
@@ -128,11 +152,13 @@ footer {
     text-transform: capitalize;
 }
 
+/*The style of the twitter account link*/
 footer a{
     color: #cedfd9;
     text-decoration: none;
 }
 
+/*animations of the twitter account link*/
 footer a:hover{
     color: #94b1af;
     transition: all 0.3s ease-in-out;
