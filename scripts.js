@@ -24,7 +24,7 @@ function fetchQuote() {
         "headers": {
 
             // ATTENTION DON'T SHARE YOUR API KEY NUMBER, THIS IS DANGEROUS!!
-            "X-RapidAPI-Key": 'cc36eed77dmshe55e05fa27f88f6p161763jsncedbbd2abd0e',
+            "X-RapidAPI-Key": 'Enter Your API key here',
             "X-RapidAPI-Host": 'quotes15.p.rapidapi.com'
         }
     })
