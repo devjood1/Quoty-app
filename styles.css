@@ -1,7 +1,3 @@
-@media only screen 
-    and (device-width: 390px) 
-    and (device-height: 844px) 
-    and (-webkit-device-pixel-ratio: 3) {
 /*The default values for the whole web app*/
 body{
     background: #386361;
@@ -166,5 +162,4 @@ footer a{
 footer a:hover{
     color: #94b1af;
     transition: all 0.3s ease-in-out;
-}
 }
